@@ -254,7 +254,7 @@ def handle_attack(message):
 
     def attack_execution():
         try:
-            subprocess.run(f"./megoxer {target} {port} {time_duration} 900", shell=True, check=True, timeout=time_duration)
+            subprocess.run(f"./ROY {target} {port} {time_duration} 900", shell=True, check=True, timeout=time_duration)
         except subprocess.TimeoutExpired:
             bot.reply_to(message, "❌ ATTACK TIMEOUT! SCREENSHOT OPTIONAL Hai, SEND KROGE TOH CHANNEL PE FORWARD HOGA!")
         except subprocess.CalledProcessError:
